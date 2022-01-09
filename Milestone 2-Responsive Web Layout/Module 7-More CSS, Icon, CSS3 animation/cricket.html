@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .field {
+        border: 1px solid red;
+      }
+      .field:hover .bat {
+        transform: rotate(-70deg);
+        transform-origin: top right;
+      }
+      .bat {
+        transition: transform 0.3s ease-in;
+      }
+      .bal {
+        height: 40px;
+        width: 40px;
+        background-color: red;
+        border-radius: 50%;
+        position: relative;
+        left: 200px;
+        top: -50px;
+        transition: transform 1s ease-out 0.3s;
+      }
+      .field:hover .bal {
+        transform: translate(700px, -200px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="field">
+      <img
+        style="padding-bottom: 50px"
+        class="bat"
+        src="./image/images.png"
+        alt=""
+      />
+      <div class="bal"></div>
+    </div>
+    <div style="display: inline">
+      [![Top
+      Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hamidhosen42)](https://github.com/anuraghazra/github-readme-stats)
+
+      <p>
+        &nbsp;<img
+          align="right"
+          src="https://github-readme-stats.vercel.app/api?username=hamidhosen42&show_icons=true&locale=en"
+          alt="hamidhosen42"
+        />
+      </p>
+    </div>
+  </body>
+</html>
