@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1
+        {
+            color: red;
+        }
+        h1:hover
+        {
+            color: royalblue;
+            background-color: skyblue;
+            margin: 10px;
+            padding: 10px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .middle:focus
+        {
+            color: springgreen;
+            font-size: 20px;
+            border-radius: 50px;
+            border-color: red;
+        }
+        a:visited
+        {
+            color: red;
+        }
+        a
+        {
+            display: block;
+        }
+            /*<!--First child, nth child,--> */
+        li
+        {
+            color: seagreen;
+        }
+        li:first-child
+        {
+            color: red;
+        }
+        li:last-child
+        {
+            background-color: salmon;
+        }
+        li:nth-child(2n)
+        {
+            color: springgreen;
+        }
+        li:nth-child(2n+1)
+        {
+            background-color: green;
+        }
+        /*pseudo element before after*/
+        h3::before
+        {
+            content: "Hamid Hosen";
+        }
+        h3::after
+        {
+            content: 'Hosen';
+            color: green;
+        }
+        .spacial::after
+        {
+            content: "Azad";
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is normal home page</h1>
+    <input type="text">
+    <input class="middle" type="text">
+    <input type="text">
+
+    <a href="https://www.w3schools.com/">w3schools</a>
+    <a href="https://www.w3schools.com/html/">HTML</a>
+    <a href="https://www.w3schools.com/js/">CSS</a>
+
+    <br>
+    <br>
+
+    <!--First child, nth child,-->
+    <ul>
+        <li>Hamid</li>
+        <li>Hosen</li>
+        <li>Azad</li>
+        <li>Fahim</li>
+        <li>Riad</li>
+        <li>Moinul</li>
+        <li>Moinul</li>
+        <li>Moinul</li>
+        <li>Moinul</li>
+        <li>Moinul</li>
+    </ul>
+
+    <!--pseudo element before after-->
+    <h3>middle -1</h3>
+    <h3 class="spacial">middle -2</h3>
+    <h3>middle -3</h3>
+    <h3 class="spacial">middle -4</h3>
+    <h3>middle -5</h3>
+    <h3>middle -6</h3>
+</body>
+</html>
