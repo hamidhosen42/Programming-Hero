@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container 
+      {
+        justify-content: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 25%);
+        grid-template-columns: repeat(4, 1fr) 100px;
+        grid-template-columns: repeat(4, 1fr) 2fr;
+        grid-template-rows: 20px;
+        grid-template-columns: 150px 150px 1fr 1fr;
+        grid-template-columns: repeat(6,100px);
+        grid-gap: 10px 20px;
+      }
+      .grid-cell 
+      {
+        border: 1px solid red;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Grid Table</h2>
+    <div class="grid-container">
+      <div class="grid-cell">Cell Number-1</div>
+      <div class="grid-cell">Cell Number-2</div>
+      <div class="grid-cell">Cell Number-3</div>
+      <div class="grid-cell">Cell Number-4</div>
+      <div class="grid-cell">Cell Number-5</div>
+      <div class="grid-cell">Cell Number-6</div>
+      <div class="grid-cell">Cell Number-7</div>
+      <div class="grid-cell">Cell Number-8</div>
+      <div class="grid-cell">Cell Number-9</div>
+      <div class="grid-cell">Cell Number-10</div>
+      <div class="grid-cell">Cell Number-11</div>
+      <div class="grid-cell">Cell Number-12</div>
+    </div>
+  </body>
+</html>
