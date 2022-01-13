@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Use</title>
+
+    <script
+      src="https://kit.fontawesome.com/b344efa80c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .box-container {
+        display: flex;
+        justify-content: center;
+      }
+      .login-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .login-form input,
+      button 
+      {
+        border-radius: 5px;
+        font-size: 20px;
+        margin-top: 15px;
+        border: 1px solid red;
+        padding: 5px 10px;
+      }
+      .login-form button {
+        background-color: silver;
+        color: red;
+        font-weight: 700px;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        margin-right: 20px;
+      }
+      nav
+      {
+          display:flex;
+          justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span>
+          <a href="">Home</a>
+          <a href="">Product</a>
+          <a href="">Orders</a>
+          <a href="">About us</a>
+        </span>
+        <span>
+          <a href=""><i class="fas fa-user"></i></a
+        ></span>
+      </nav>
+    </header>
+    <section class="box-container">
+      <form action="" class="login-form">
+        <h2 style="text-align: center">Login From</h2>
+        <input
+          type="email"
+          name="email"
+          required
+          id=""
+          placeholder="Your Email"
+        />
+        <input
+          type="password"
+          name="password"
+          required
+          id=""
+          placeholder="Your Password"
+        />
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom property</title>
+
+    <style>
+        :root
+        {
+            --side-width:200px;
+            --main-color:blue;
+            --border-color:red;
+            --background-color:yellow;
+        }
+        h1
+        {
+            color:var(--main-color);
+        }
+        p
+        {
+            color: var(--main-color);
+        }
+        h2
+        {
+            border: 2px solid --border-color;
+            color:var(--main-color);
+        }
+        h6
+        {
+            background-color:var(--background-color);
+        }
+        footer
+        {
+            clear: both;
+            color: var(--main-color);
+        }
+        .side-nav,.blogs
+        {
+            float: left;
+            height: 300px;
+        }
+        aside
+        {
+            background-color: greenyellow;
+            width: var(--side-width);
+        }
+        .blogs
+        {
+            background-color: red;
+            width: calc(100% - 1.5*var(--side-width));
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Md.Hamid Hosen</h1>
+        <p>Welcome to my website</p>
+    </header>
+
+    <main>
+        <h2>My name is Md.Hamid Hosen</h2>
+        <h6>East Delta University</h6>
+
+        <section>
+            <aside class="side-nav">
+                my name Md.hamuid
+            </aside>
+
+            <div class="blogs">
+                <h3>sdjskkd skdksk skdks</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright</p>
+    </footer>
+
+</body>
+</html>
