@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        border: 5px solid red;
+        /* position: relative; */
+      }
+      .container {
+        border: 5px solid blue;
+        position: relative;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #box-1 {
+        background-color: red;
+      }
+      #box-2 {
+        background-color: saddlebrown;
+        position: absolute;
+        top: 10px;
+        left: 100px;
+        /* position: relative;
+            top: 50px;
+            left: 100px; */
+      }
+      #box-3 {
+        background-color: seagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Website</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+      perspiciatis, veniam eius, provident iusto quae neque, debitis minima
+      quasi eveniet illum deserunt laboriosam rerum fuga sequi. Nulla sapiente
+      sed minima!
+    </p>
+
+    <div class="container">
+      <div class="box" id="box-1">Box-1</div>
+      <div class="box" id="box-2">Box-2</div>
+      <div class="box" id="box-3">Box-3</div>
+    </div>
+  </body>
+</html>

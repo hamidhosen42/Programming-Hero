@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* header section................... */
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+main,
+header {
+  font-family: "Poppins", sans-serif;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 60px;
+  justify-content: center;
+}
+.title {
+  font-size: 24px;
+  width: 100%;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-items {
+  display: flex;
+  list-style: none;
+}
+.navigation-items > li > a {
+  text-decoration: none;
+  color: #3a3a3a;
+  padding-left: 34px;
+}
+.logo {
+  font-size: 25px;
+}
+
+/*Influencer section  */
+.banner-left {
+  margin-top: 40px;
+}
+.banner-left > h1 {
+  font-weight: 700px;
+  font-size: 40px;
+  line-height: 70px;
+  color: #3a3a3a;
+}
+.banner-left > p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3a3a3a;
+  margin-top: -20px;
+}
+.primary-button {
+  background-color: #e02c6d;
+  border-radius: 40px;
+  padding: 10px 24px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.banner-right {
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+}
+.imageOne > img {
+  height: 450px;
+  width: 450px;
+}
+.imageTwo > img {
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  top: 220px;
+  left: 270px;
+  transform: translate(-210px, -200px);
+}
+
+/* <!--company-logo --> */
+
+.company-logo {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px 50px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*............... Popular-Collection................... */
+.Popular-Collection {
+  display: grid;
+  justify-content: center;
+}
+.populer > h1 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  color: #3a3a3a;
+  font-size: 28px;
+  font-weight: 600px;
+}
+.populer-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.populer-card :hover {
+  transform: scale(0.1);
+  transition: width 2s, height 2s, transform 2s;
+}
+.photo-album {
+  padding: 17px 14px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.photo-details > h4 {
+  color: #18191f;
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 20px;
+  height: 10px;
+}
+.price > p {
+  font-size: 24px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+  height: 25px;
+}
+.rating > p > i {
+  color: #fb8200;
+  width: 11.07px;
+  height: 10.32px;
+  padding-right: 7px;
+}
+.rating > p > span {
+  color: #5e6366;
+  padding-left: 5px;
+}
+.photo-details > p {
+  color: #787885;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: -10px;
+}
+.populer-button > p {
+  color: rgba(224, 44, 109, 0.87);
+  font-weight: bold;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  float: right;
+  padding-top: 30px;
+}
+
+/* contact part css */
+.contact-title {
+  font-size: 24px;
+  text-align: center;
+}
+.contact,
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.contact-left img {
+  margin-top: 80px;
+  height: 400px;
+  width: 400px;
+}
+form > h2 {
+  color: #fb8200;
+  font-size: 25px;
+}
+form > p {
+  color: gray;
+  font-size: 16px;
+}
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+}
+.text-field {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid orange;
+  outline: 0;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+.contact-primary-button {
+  width: 100px;
+  background-color: #e02c6d;
+  border-radius: 10px;
+  padding: 10px 24px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+/* footer................. */
+footer {
+  justify-content: center;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 40px 0px;
+}
+footer > div > h3 {
+  font-weight: bold;
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+small {
+  font-size: 14px;
+  font-weight: bold;
+  color: #d9dbe1;
+}
+.icon > i {
+  color: #ffffff;
+  padding-top: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* responsive css */
+
+@media (max-width: 1200px) {
+  .title > h3 {
+    text-align: center;
+    align-items: center;
+    order: 2;
+  }
+
+  .company-logo {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -10px;
+    text-align: center;
+  }
+  .populer-card {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -10px;
+  }
+  .imageTwo > img {
+    top: 220px;
+    left: 400px;
+  }
+  .banner {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    width: 100%;
+  }
+  .navigation-items {
+    display: block;
+  }
+}
+
+@media (max-width: 1000px) {
+  .company-logo {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -10px;
+    text-align: center;
+  }
+  .populer-card {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -10px;
+  }
+  .imageTwo > img {
+    top: 220px;
+    left: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .company-logo {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -10px;
+    text-align: center;
+  }
+  .populer-card {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -10px;
+  }
+  .imageTwo > img {
+    top: 220px;
+    left: 350px;
+  }
+}
+
+@media (max-width: 800px) {
+  .company-logo {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -10px;
+    text-align: center;
+  }
+  .imageTwo > img {
+    top: 220px;
+    left: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .company-logo {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -10px;
+    text-align: center;
+  }
+  .imageTwo > img {
+    top: 220px;
+    left: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .company-logo {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -10px;
+    text-align: center;
+  }
+  .imageTwo > img {
+    top: 220px;
+    left: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .populer-card {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -10px;
+  }
+  .imageTwo > img {
+    top: 220px;
+    left: 250px;
+  }
+  .company-logo {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -10px;
+    text-align: center;
+  }
+  .company-logo > div > img {
+    padding: 10px;
+  }
+  .banner {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    width: 100%;
+  }
+  .navigation-items {
+    display: block;
+  }
+}
