@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./CSS/bootstrap.css" />
+  </head>
+  <body>
+    <!-- ----------------Shadows and Margin------------------- -->
+
+    <div class="shadow-none p-3 mt-5 bg-light rounded">No shadow</div>
+    <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+    <div class="shadow pt-3 mb-5 bg-primary text-light rounded">
+      Regular shadow
+    </div>
+    <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+
+    <!-- ----------------Shadows and Margin End ------------------- -->
+
+    <!------- Sizing(height and width) ------->
+
+    <div class="w-25 p-3" style="background-color: yellow">Width 25%</div>
+    <div class="w-50 p-3" style="background-color: rgb(60, 223, 114)">
+      Width 50%
+    </div>
+    <div class="w-75 p-3" style="background-color: rgb(207, 44, 44)">
+      Width 75%
+    </div>
+    <div class="w-100 p-3" style="background-color: rgb(51, 31, 168)">
+      Width 100%
+    </div>
+    <div class="w-auto p-3" style="background-color: rgb(31, 158, 180)">
+      Width auto
+    </div>
+
+    <div style="height: 100px; background-color: rgba(255, 0, 0, 0.1)">
+      <div
+        class="h-25 d-inline-block"
+        style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+      >
+        Height 25%
+      </div>
+      <div
+        class="h-50 d-inline-block"
+        style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+      >
+        Height 50%
+      </div>
+      <div
+        class="h-75 d-inline-block"
+        style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+      >
+        Height 75%
+      </div>
+      <div
+        class="h-100 d-inline-block"
+        style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+      >
+        Height 100%
+      </div>
+      <div
+        class="h-auto d-inline-block"
+        style="width: 120px; background-color: rgba(0, 0, 255, 0.1)"
+      >
+        Height auto
+      </div>
+    </div>
+
+    <!-- max width  and max-height-->
+
+    <img src="./Image/action.png" class="mw-100" alt="..." />
+
+    <div style="height: 100px; background-color: rgba(255, 0, 0, 0.1)">
+      <div
+        class="mh-100"
+        style="
+          width: 100px;
+          height: 200px;
+          background-color: rgba(0, 0, 255, 0.1);
+        "
+      >
+        Max-height 100%
+      </div>
+    </div>
+
+    <!-- Relative to the viewport -->
+    <div class="min-vw-100">Min-width 100vw</div>
+    <div class="min-vh-100">Min-height 100vh</div>
+    <div class="vw-100">Width 100vw</div>
+    <div class="vh-100">Height 100vh</div>
+
+    <!------- Sizing(height and width) End------->
+
+    <!-- Text -->
+    <p class="text-start">Start aligned text on all viewport sizes.</p>
+    <p class="text-center">Center aligned text on all viewport sizes.</p>
+    <p class="text-end">End aligned text on all viewport sizes.</p>
+
+    <p class="text-sm-start">
+      Start aligned text on viewports sized SM (small) or wider.
+    </p>
+    <p class="text-md-start">
+      Start aligned text on viewports sized MD (medium) or wider.
+    </p>
+    <p class="text-lg-start">
+      Start aligned text on viewports sized LG (large) or wider.
+    </p>
+    <p class="text-xl-start">
+      Start aligned text on viewports sized XL (extra-large) or wider.
+    </p>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
