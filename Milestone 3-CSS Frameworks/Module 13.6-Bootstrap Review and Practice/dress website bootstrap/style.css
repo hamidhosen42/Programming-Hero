@@ -1,0 +1,15 @@
+.btn {
+    background-color: #fa804c;
+}
+
+.btn:hover {
+    background-color: #a84b23;
+}
+
+.price {
+    color: #FABE4C;
+}
+
+.card-img-top {
+    background-color: #F1F1F1;
+}
