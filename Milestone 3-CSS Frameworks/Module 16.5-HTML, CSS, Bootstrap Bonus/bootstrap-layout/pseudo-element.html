@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        h1::after {
+            content: " CSE";
+            color: aqua;
+        }
+        
+        h1::before {
+            content: "Name: ";
+            color: aquamarine;
+        }
+        
+        blockquote::before {
+            content: open-quote;
+            color: brown;
+        }
+        
+        blockquote::after {
+            content: close-quote;
+            color: brown;
+        }
+        
+        .section-title {
+            display: inline-block;
+        }
+        
+        .section-title::after,
+        .section-title:hover:before {
+            content: "";
+            height: 2px;
+            width: 100%;
+            background-color: chartreuse;
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>My name is md.hamid hosen</h1>
+    <h1>My name is md.hamid hosen</h1>
+
+    <section>
+        <h2 class="section-title">My name is md.hamid hosen</h2>
+        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex unde reiciendis quia eius culpa magni, porro quo laborum cupiditate delectus similique numquam. Perferendis ipsum nostrum dolorem, rem iure quis.</blockquote>
+        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex unde reiciendis quia eius culpa magni, porro quo laborum cupiditate delectus similique numquam. Perferendis ipsum nostrum dolorem, rem iure quis.</blockquote>
+    </section>
+</body>
+
+</html>
