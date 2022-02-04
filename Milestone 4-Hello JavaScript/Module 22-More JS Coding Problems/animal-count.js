@@ -29,4 +29,4 @@ function animalCount(miles)
     }
 }
 
-console.log(animalCount(35));
+console.log(animalCount(25));
