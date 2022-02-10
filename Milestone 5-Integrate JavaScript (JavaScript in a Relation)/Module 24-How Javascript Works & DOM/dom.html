@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* #title-section1
+        {
+            color: aqua;
+        } */
+        
+        /* .blog
+        {
+            margin: 10px;
+            border: 2px solid red;
+        } */
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to my blog website</h1>
+    </header>
+    
+    <main>
+        <section id="blogs">
+            <header>
+                <h3>Blogs List</h3>
+                <ul id="blog-list">
+                    <li>Blog-1</li>
+                    <li>Blog-2</li>
+                    <li>Blog-3</li>
+                    <li>Blog-4</li>
+                </ul>
+            </header>
+            <div class="blog">
+                <h2>My website blog-1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque at accusantium aliquam soluta aspernatur sapiente officia animi quas! Vero nulla assumenda quisquam aperiam dolor consequuntur ipsum, placeat culpa voluptas ad?</p>
+            </div>
+            <div class="blog">
+                <h2>My website blog-2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque at accusantium aliquam soluta aspernatur sapiente officia animi quas! Vero nulla assumenda quisquam aperiam dolor consequuntur ipsum, placeat culpa voluptas ad?</p>
+            </div>
+            <div class="blog">
+                <h2>My website blog-3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque at accusantium aliquam soluta aspernatur sapiente officia animi quas! Vero nulla assumenda quisquam aperiam dolor consequuntur ipsum, placeat culpa voluptas ad?</p>
+            </div>
+            <div class="blog">
+                <h2>My website blog-4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque at accusantium aliquam soluta aspernatur sapiente officia animi quas! Vero nulla assumenda quisquam aperiam dolor consequuntur ipsum, placeat culpa voluptas ad?</p>
+            </div>
+            <div class="blog">
+                <h2 id="title-section1">My website blog-5</h2>
+                <p id="p1-section1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque at accusantium aliquam soluta aspernatur sapiente officia animi quas! Vero nulla assumenda quisquam aperiam dolor consequuntur ipsum, placeat culpa voluptas ad?</p>
+            </div>
+        </section>
+
+        <!-- script section------- -->
+        <script>
+
+            const student={name:"Hamid",age:21,height:60};
+
+            // --------------------getElementsByTagName---------
+
+            // console.log(document.body);
+            // const blogTitles=['h3','h3','h3','h3','h3']
+            const blogTitles=document.getElementsByTagName('h2');
+            
+            for(const h3 of blogTitles)
+            {
+                // console.log(h3);
+                // console.log(h3.innerText);
+            }
+
+            const blogDetails=document.getElementsByTagName("p");
+
+            for(const blog of blogDetails)
+            {
+                // console.log(blog);
+                // console.log(blog.innerText);
+            }
+
+            // -----------------------getElementById--------------
+
+            const title1=document.getElementById("title-section1");
+            title1.style.color="red";
+
+            const p1=document.getElementById("p1-section1");
+
+            p1.innerText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque at accusantium aliquam soluta aspernatur sapiente officia animi quas! Vero nulla assumenda quisquam aperiam dolor consequuntur ipsum, placeat culpa voluptas ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque at accusantium aliquam soluta aspernatur sapiente officia animi quas! Vero nulla assumenda quisquam aperiam dolor consequuntur ipsum, placeat culpa voluptas ad?";
+
+            p1.style.backgroundColor="salmon";
+            p1.style.padding="15px";
+            p1.style.borderRadius="5px";
+
+            // ----------getElementsByClassName----------
+            const blogs=document.getElementsByClassName('blog');
+
+            for(const blog of blogs)
+            {
+                console.log(blog);
+                blog.style.border="2px solid red";
+                blog.style.margin="10px";
+                blog.style.padding="5px";
+                blog.style.borderRadius='5px';
+            }
+
+            // ------querySelectorAll----------
+            const blog_1=document.querySelector('div');
+            blog_1.style.backgroundColor='red';
+
+            const blog_2=document.querySelectorAll('.blog');
+            // blog_2.style.backgroundColor='green';
+
+            // -------- NodeList, htmlcollection, setAttribute, parentNode, childnodes---
+            
+            const title=document.getElementById('title-section1');
+            console.log(title.getAttribute('id'));
+            console.log(title.getAttribute('style'));
+            console.log(title.setAttribute('title',"Hamid Hosen"));
+            console.log(title.parentElement);
+            console.log(title.childNodes);
+            console.log(title.parentNode);
+            console.log(title.parentNode.parentNode.parentNode.parentNode.parentNode);
+
+            // ---------Create HTML elements using Javascript and appendChild----
+            
+            // 1-create and add element by using js
+            const li=document.createElement('li');
+            li.innerText='Blog-5';
+
+            // 2-Where to add
+            const ul=document.getElementById('blog-list');
+
+            // append new element 
+            ul.appendChild(li);
+
+            // --add div
+            const div=document.createElement('div');
+            div.classList.add('blog');
+
+            // const h2=document.createElement('h2');
+            // h2.innerText='My Website blog-6';
+            // div.appendChild(h2);
+
+            // const p=document.createElement('p');
+            // p.innerText='Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque at accusantium aliquam soluta aspernatur sapiente officia animi quas! Vero nulla assumenda quisquam aperiam dolor consequuntur ipsum, placeat culpa voluptas ad?';
+            // div.appendChild(p);
+
+            div.innerHTML=
+            `
+            <h2>My website blog-6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque at accusantium aliquam soluta aspernatur sapiente officia animi quas! Vero nulla assumenda quisquam aperiam dolor consequuntur ipsum, placeat culpa voluptas ad?</p>
+            `;
+
+            // parent of div
+            const blogSection=document.getElementById('blogs');
+            blogSection.appendChild(div);
+
+        </script>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+
+    <h1 onclick="console.log('Hamid')">Event niya Clickbaji</h1>
+    <button onclick="alert(7)">
+        click Me
+    </button>
+    <button onclick="console.log(6)">
+        click Me
+    </button>
+
+    <!-- system no-1 -->
+    <button onclick="document.body.style.backgroundColor='yellow'">
+        click Me yellow
+    </button>
+
+    <!-- system no-2 -->
+    <button onclick="eventRed()">Click me red</button>
+
+    <!-- system no-3 -->
+    <button id="make-blue-button">Click me:Blue</button>
+
+    <!-- system no-4 -    addEventListener-->
+    <button id="make-green-button">Click me:Green</button>
+
+    <!-- system no-5 -    addEventListener-->
+    <button id="make-orange-button">Click me:Orange</button>
+
+    <!-- system no-6 -    addEventListener-->
+    <button id="make-hotpink-button">Click me:hot pink</button>
+
+    <!-- system no-7 -    addEventListener-->
+    <button id="make-light-blue-button">Click me:Light Blue</button>
+
+    <script>
+        // <!-- system no-2 -->
+
+        // function eventRed()
+        // {
+        //     document.body.style.backgroundColor='red';
+        // }
+
+
+        //  <!-- system no-3 -->
+        
+        // const bluebutton=document.getElementById('make-blue-button');
+        // // console.log(bluebutton);
+        // // just set the name of the function
+        // bluebutton.onclick=makeBlue;
+        // function makeBlue()
+        // {
+        //     document.body.style.backgroundColor='blue';
+        // }
+
+
+        // //  <!-- system no-4 -    addEventListener-->
+
+        // const greenButton=document.getElementById('make-green-button');
+        // // anonymous function
+        // greenButton.onclick=function()
+        // {
+        //     document.body.style.backgroundColor='green';
+        // }
+        // // greenButton.onclick=function makeGreen()
+        // // {
+        // //     document.body.style.backgroundColor='green';
+        // // }
+
+
+        // // <!-- system no-5 -    addEventListener-->
+
+        // const orangeButton=document.getElementById('make-orange-button');
+        // orangeButton.addEventListener('click',makeOrange);
+        // function makeOrange()
+        // {
+        //     document.body.style.backgroundColor='orange';
+        // }
+
+
+        // // <!-- system no-6 -    addEventListener-->
+        // const hotPink=document.getElementById('make-hotpink-button');
+        // hotPink.addEventListener('click',function()
+        // {
+        //     document.body.style.backgroundColor="hotpink";
+        // }
+        // );
+
+        // // <!-- system no-7 -    addEventListener-->
+        // document.getElementById("make-light-blue-button").addEventListener('click',function(){
+        //     document.body.style.backgroundColor='lightblue';
+        // });
+    </script>
+    <script src="js/event.js"></script>
+
+</body>
+</html>
