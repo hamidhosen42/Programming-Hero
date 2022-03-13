@@ -19,7 +19,7 @@ const defult = () => {
 };
 defult();
 
-const showArtists = (data) => {
+const showArtists = (data) => { 
   const artistContainer = elementById("artists");
   artistContainer.textContent="";
   data?.artists?.forEach((artist) => {
@@ -65,7 +65,6 @@ const fetchAlbums = (id) => {
 };
 
 const showAlbum = (data) => {
-  console.log(data);
   const albumContainer = elementById("albums");
   albumContainer.textContent="";
   data?.album?.forEach((item) => {
