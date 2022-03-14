@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insta-Sohor</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- google Montserrat  font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- css bootstrap add -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+            <a class="navbar-brand" href="#">Insta-Sohor</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-link active" role="button" onclick="switchTab( 'posts' )">
+                        <i class="fa-solid fa-house"></i>
+                    </li>
+
+                    <li class="nav-link active" role="button" onclick="switchTab( 'liked' )">
+                        <i class="fa-solid fa-heart text-danger"></i>
+                    </li>
+
+                    <li class="nav-link active" role="button" onclick="switchTab( 'reported' )">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main container mx-auto p-3">
+        <div id="posts">
+        </div>
+        <div id="liked">
+            <h1>Liked posts</h1>
+        </div>
+
+        <div id="reported">
+            <h1>Reported posts</h1>
+        </div>
+    </main>
+
+    <section id="question" class="container">
+        <h2 class="text-center mb-3">The answer to the Question</h2>
+
+        <div class="col">
+            <div class="col" class="card-group">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">How Does Javasctipt Work?</h5>
+                        <p class="card-text" style="text-align: justify;">জাভাস্ক্রিপ্ট একটি হাই লেভেল প্রোগ্রামিং ল্যাংঙ্গুয়েজ।আর এটাকে ইন্টারমেডিয়েট ল্যাঙ্গুয়েজ ও বলে। এর উপর তৈরি হয়েছে বেশ কিছু যেমন CoffeeScript, TypeScript এর মতো সাব ল্যাঙ্গুয়েজ,এ ছাড়াও Apache CouchDB, MongoDB ইত্যাদি ডাটাবেইজ গুলো তাদের স্ক্রিপ্টিং ল্যাঙ্গুয়েজ এবং কুয়েরী ল্যাঙ্গুয়েজ হিসেবেজাভাস্ক্রিপ্ট ব্যবহার করে।সাধারণত জাভাস্ক্রিপ্ট দুইভাবে ওয়েবে ব্যবহার করা হই।ক্লাইন্ট সাইড এবং সার্ভার সাইড।ক্লাইন্ট সাইড সাধারণত শুধু ব্রাউজারে চলে এবং সার্ভার সাইড সার্ভারে চলে,সাধারনত সার্ভার থেকেই কোড প্রসেস হয়।আজকাল, বেশিরভাগ আধুনিক ওয়েব ব্রাউজার জাভাস্ক্রিপ্ট সমর্থন করে এবং তাদের জাভাস্ক্রিপ্ট ইঞ্জিন রয়েছে। উদাহরণস্বরূপ,Google Chrome এর নিজস্ব জাভাস্ক্রিপ্ট ইঞ্জিন রয়েছে যার নাম V8। এছাড়াও জাভাস্ত্রিপ্ট এর সাহায্যে একটা HTML পেজে নানান ধরনের ইফেক্ট বা আকর্ষণীয় জিনিস তৈরী করা যায় এছাড়া ফর্ম ভেলিডেশন এবং
+                        এজাক্সের কাজও করা যায়।</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body mt-4">
+                        <h5 class="card-title text-primary">LocalStorage vs sessionStorage</h5>
+                        <p class="card-text" style="text-align: justify;"><span class="text-success fw-bold">LocalStorage:</span>লোকাল স্টোরেজ এর ডাটা স্হায়ী থাকে।ব্রাউজার বন্ধ হয়ে গেলে বা বন্ধ হয়ে গেলে ব্রাউজারে আবার পাওয়া যাবে।লোকাল স্টোরেজ এর চারটা মেথড setItem(),getItem(),removeItem(),clear()।localStorage.setItem(key, value) ব্যবহার করে লোকাল স্টোরেজ এ মান সেট করা হই এবং localStorage.getItem() ব্যবহার করে লোকাল স্টোরেজ থেকে নির্দিষ্ট মান রিটার্ন করা হই।এছাড়াও লোকাল স্টোরেজ এর অবজেক্ট নিয়ে কাজ করতে হলে সেটাকে প্রথমে JSON.parse() করতে হবে, লোকাল স্টোরেজ এ কোন অবজেক্ট সেট করার আগে JSON.stringify() করতে হবে।
+                        </p>
+
+                        <p class="card-text mt-4" style="text-align: justify;"><span class="text-success fw-bold">SessionStorage:</span>সেশন স্টোরেজ এর ডাটা সাময়িকভাবে থাকে।ব্রাউজার বন্ধ হয়ে গেলে বা বন্ধ হয়ে গেলে ব্রাউজারে আবার পাওয়া যাবে না।সেশন স্টোরেজ এর চারটা মেথড setItem(),getItem(),removeItem(),clear()।sessionStorage.setItem(key, value) ব্যবহার করে সেশন স্টোরেজ এ মান সেট করা হই এবং sessionStorage.getItem() ব্যবহার করে সেশন স্টোরেজ থেকে নির্দিষ্ট মান রিটার্ন করা হই। এছাড়াও সেশন স্টোরেজএর অবজেক্ট নিয়ে কাজ করতে হলে সেটাকে প্রথমে JSON.parse() করতে হবে, সেশন স্টোরেজ এ কোন অবজেক্ট সেট করার
+                        আগে JSON.stringify() করতে হবে।</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">What does javascript event loop do?</h5>
+                        <p class="card-text" style="text-align: justify;">জাভাস্ক্রিপ্ট এর ইভেন্ট লুপ হচ্ছে Callback Queue থেকে Call stack এ নিয়ে যাওয়া। ধরুন আমরা তিনটি Function ক্রিয়েট করলাম।
+                        তারপর ঐ তিনটি ফাংশনকে আমরা আরেকটি ফাংশন থেকে কল করবো। সেই ফাংশনে যদি আমরা দুইটা ফাংশনের পর ‍setTimeout সেট করে অন্য
+                        আরেকটা ফাংশন ওখানে রাখি তারপর আরেকটা ফাংশকে কল করি তাহলে কি হয়? আমরা এখানে দেখি যে Javascript প্রথমে মেইন ফাংশনকে কল করে
+                        যে ফাংশনটাতে আমরা চারটা ফাংশন কল করছি সেটাকে কল করবে। ওখান থেকে প্রথম দুইটা কল করার পর ‍setTimeout এ যেটুকু সময় টাইম আউট
+                        করা হয়েছে সেটা বাদ দিয়ে পরের ফাংশনে চলে যাবে। সেটা execute করে দিবে। এখন ইভেন্ট লুপ কাজ করবে যে ফাংশনটাকে টাইমআউট করা
+                        হয়েছে সেটাকে callback queue থেকে call stack এ নিয়ে যাবে। তারপর সেই ফাংশনের কাজ শেষ হলে আমাদের পুরা কোড রান হওয়া শেষ হবে।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+
+    <!-- add javascript  file  -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
