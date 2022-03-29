@@ -1,0 +1,18 @@
+.nav-section
+{
+    font-weight: 700;
+    font-size: larger;
+    margin-left: 10px;
+    display: inline-flex;
+
+}
+.nav-section >a
+{
+    margin-left: 10px;
+    text-decoration: none;
+   
+}
+.nav-section >a:hover
+{
+    color: green;
+}

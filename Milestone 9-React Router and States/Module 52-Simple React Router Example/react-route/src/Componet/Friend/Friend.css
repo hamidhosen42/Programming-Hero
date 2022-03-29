@@ -1,0 +1,13 @@
+.user-button
+{
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+}
+.user-button:hover
+{
+    background-color: aquamarine;
+    color: black;
+}
