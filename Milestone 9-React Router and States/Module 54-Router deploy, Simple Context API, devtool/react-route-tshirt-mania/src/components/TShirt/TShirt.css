@@ -1,0 +1,27 @@
+.t-shirt{
+    height: 400px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    position: relative;
+}.t-shirt:hover
+{
+    background-color: aqua;
+}
+.t-shirt img{
+    height: 250px;
+}
+.cart-button
+{
+    border: none;
+    padding: 8px 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: yellowgreen;
+    border-radius: 10px 10px;
+}
+.cart-button:hover
+{
+    background-color: red;
+}

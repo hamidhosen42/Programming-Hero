@@ -1,0 +1,12 @@
+.nav-section
+{
+    font-weight: 700;
+    font-size: medium;
+    margin-left: 10px;
+    display: inline-flex;
+
+}
+.nav-section:hover
+{
+    color: green;
+}
