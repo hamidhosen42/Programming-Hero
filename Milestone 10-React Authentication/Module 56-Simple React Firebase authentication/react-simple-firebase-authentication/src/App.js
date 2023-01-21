@@ -1,64 +1,70 @@
 import "./App.css";
 import app from "./firebase.init";
-import { getAuth, signInWithPopup, signOut } from "firebase/auth";
-import { GoogleAuthProvider } from "firebase/auth";
+import {
+  getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  signOut,
+  GithubAuthProvider,
+} from "firebase/auth";
 import { useState } from "react";
-import { GithubAuthProvider } from "firebase/auth";
 
 const auth = getAuth(app);
 
 function App() {
-  const [user, setUser] = useState([]);
-
   const googleProvider = new GoogleAuthProvider();
   const githubProvider = new GithubAuthProvider();
 
+  const [user, setUser] = useState([]);
+
   const handleGoogleSignIn = () => {
-    signInWithPopup(auth,googleProvider)
+    signInWithPopup(auth, googleProvider)
       .then((result) => {
         const user = result.user;
         setUser(user);
+        // console.log(user);
       })
       .catch((error) => {
         console.log(error);
       });
   };
 
-  const handleGoogleSignOut = () => {
-    signOut(auth)
-      .then(() => {
-        setUser({});
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
-  const handleGithubSignIn=()=>{
+  const handleGithubSignIn = () => {
     signInWithPopup(auth, githubProvider)
       .then((result) => {
         const user = result.user;
         setUser(user);
-        
+        console.log(user);
+        // ...
       })
       .catch((error) => {
         console.log(error);
       });
-  }
+  };
 
+  const handleSignOut = () => {
+    signOut(auth)
+      .then(() => {
+        setUser({});
+        console.log("Sign-out successful.");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="App">
-      {user.uid ? (
-        <button onClick={handleGoogleSignOut}>Google Sign Out</button>
+      {user.email ? (
+        <button onClick={handleSignOut}>Sign Out</button>
       ) : (
         <>
-          <button onClick={handleGoogleSignIn}>Google Sign In</button>
+          <button onClick={handleGoogleSignIn}>Google Sign in</button>
           <button onClick={handleGithubSignIn}>Github Sign In</button>
         </>
       )}
       <h2>Name : {user.displayName}</h2>
-      <h3>Gmail : {user.email}</h3>
-      <img src={user.photoURL} alt="" srcset="" />
+      <h3>Email : {user.email}</h3>
+      <img src={user.photoURL} alt="" />
     </div>
   );
 }
